@@ -1,0 +1,23 @@
+form {
+background: DarkGrey;
+font-family: mv boli;
+margin-left: 200px;
+margin-right: 200px;
+padding: 10px;
+}
+body {
+text-align: center;
+background: ;
+}
+h1{
+font-family: segoe script;
+color: SlateGrey;
+}
+p.t {
+color: Black;
+font-family: segoe print;
+}
+p {
+font-family: cursive;
+color: Linen;
+}
