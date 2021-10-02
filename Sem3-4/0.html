@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Форма опроса</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Основная страница</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Доп. стр.</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<h1>Телефон</h1>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-graphite-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652956000" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTML4ZQY5ebNXUfFUFgrbC-a7bxVGWU-3WJIQ&usqp=CAU" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://htstatic.imgsmail.ru/pic_image/67ea4fd762c8b712245db2105bcc4f52/840/470/2094761/" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://img.gazeta.ru/files3/996/13985996/Screenshot-2021-09-14-at-21.15.03.jpg" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Предыдущий</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Следующий</span>
+    </button>
+</div>
+
+<form>
+    <p class="t">Телефон есть у каждого. Расскажите о своем. В наше время телефон - Ваш друг и помощник</p>
+
+    <div class="form-floating">
+        <textarea class="form-control" placeholder="Имя" id="name"></textarea>
+        <label for="floatingTextarea">Имя</label>
+    </div>
+
+    <div class="form-floating">
+        <textarea class="form-control" placeholder="Номер телефона" id="phone"></textarea>
+        <label for="floatingTextarea">Номер телефона</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+    </div>
+
+    <div class="form-floating">
+        <textarea class="form-control" placeholder="Название телефона" id="floatingTextarea"></textarea>
+        <label for="floatingTextarea">Название телефона</label>
+    </div>
+
+    <div class="form-floating">
+        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+        <option selected>Не выбрано</option>
+        <option>до 1 года</option>
+        <option>от 1 года до 5 лет</option>
+        <option>от 5 лет до 10 лет</option>
+        <option>10 лет и больше</option>
+    </select>
+        <label for="floatingSelect">Сколько лет Вашему телефону?</label>
+    </div>
+
+    <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-2 pt-0">Тип устройства: </legend>
+        <div class="col-sm-10">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                    сенсорный
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                    кнопочный
+                </label>
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-2 pt-0">Фичи Вашего телефона:</legend>
+        <div class="row mb-3">
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                    <label class="form-check-label" for="gridCheck1">
+                        Большой заряд
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2">
+                    <label class="form-check-label" for="gridCheck1">
+                        Вырубается на холоде
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck3">
+                    <label class="form-check-label" for="gridCheck1">
+                        Да и на жаре
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck4">
+                    <label class="form-check-label" for="gridCheck1">
+                        Короче, у меня Айфон
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck5">
+                    <label class="form-check-label" for="gridCheck1">
+                        Недорогой
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck6">
+                    <label class="form-check-label" for="gridCheck1">
+                        Прочный
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Расскажите еще что-нибудь о Вашем телефоне:</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Отправить</button>
+</form>
+
+<!-- Дополнительный JavaScript; выберите один из двух! -->
+
+<!-- Вариант 1: Bootstrap в связке с Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+<!-- Вариант 2: Bootstrap JS отдельно от Popper
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+-->
+</body>
+</html>

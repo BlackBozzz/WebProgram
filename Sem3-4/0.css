@@ -1,0 +1,29 @@
+form {
+background: PaleGreen;
+font-family: mv boli;
+margin-left: 200px;
+margin-right: 200px;
+padding: 10px;
+}
+body {
+background: AliceBlue;
+}
+h1{
+font-family: segoe script;
+color: DarkSlateBlue;
+}
+p.t {
+text-align: center;
+color: Indigo;
+font-family: segoe print;
+}
+p {
+font-family: cursive;
+color: DeepSkyBlue;
+}
+h1{
+text-align: center;
+}
+div{
+padding: 5px;
+}
